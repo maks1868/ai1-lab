@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d0decd;
+    color: #283624;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #304c38;
+    color: #d0decd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #98a268;
+}
+
+h2, h3 {
+    font-size: 2em;
+    color: #304c38;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    background-color: #a2bc9b;
+    padding: 15px;
+    border-left: 5px solid #283624;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+    background-color: #d0decd;
+}
+
+a {
+    color: #304c38;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #98a268;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.background-img {
+    content: url('wallpaper1.jpg');
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

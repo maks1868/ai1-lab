@@ -2,25 +2,28 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Maps with Leaflet</title>
+    <title>Maps with Leaflet Puzzle</title>
     <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
     <script src="leaflet-1.7.1/leaflet-src.js"></script>
     <script src="leaflet-1.7.1/leaflet-providers.js"></script>
     <script src="leaflet-1.7.1/leaflet-image.js"></script>
-
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="map"></div>
+    <div id="top-section">
+        <div id="map"></div>
+        <div id="boardContainer"></div>
+    </div>
     <button id="getLocation">Get Current Location</button>
-    <button id="saveButton">Save Raster Map</button>
-    <br>
+    <button id="getImage">Save Raster Map</button>
+    
+    <canvas id="savedImage"></canvas>
 
-    <canvas id="rasterMap"></canvas>
+    <!-- Dodany kontener na wiadomość "Congratulations" -->
+    <div id="congratulationsMessage"></div>
+
+    <div id="puzzleContainer"></div>
 
     <script src="script.js"></script>
-
-
 </body>
 </html>

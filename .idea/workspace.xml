@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faaab516-037d-4584-b972-7e61b131abe0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-c/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-c/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-c/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-d/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-d/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-d/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.index1.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "I:/Semestr VII/AI/untitled/Lab01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index1.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/Semestr VII/AI/untitled/Lab01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\Semestr VII\AI\untitled\Lab01" />
@@ -81,7 +82,8 @@
       <workItem from="1729427114183" duration="789000" />
       <workItem from="1729450442834" duration="361000" />
       <workItem from="1729709422332" duration="4096000" />
-      <workItem from="1729765284397" duration="4815000" />
+      <workItem from="1729765284397" duration="5037000" />
+      <workItem from="1730813319805" duration="3368000" />
     </task>
     <servers />
   </component>

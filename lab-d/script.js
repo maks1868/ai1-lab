@@ -9,7 +9,7 @@ document.getElementById('checkButton').addEventListener('click', function() {
 });
 
 function getCurrentWeather(city) {
-    const apiKey = '04ad4a55e039618d42a358b7e2baea0d';
+    const apiKey = '4068a40b8d6cea37dbd4b09523271be4';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
 
     const xhr = new XMLHttpRequest();
@@ -39,7 +39,7 @@ function getCurrentWeather(city) {
 
 
 function getWeatherForecast(city) {
-    const apiKey = '04ad4a55e039618d42a358b7e2baea0d';
+    const apiKey = '4068a40b8d6cea37dbd4b09523271be4';
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
 
     fetch(url)

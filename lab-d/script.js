@@ -17,8 +17,9 @@ function getCurrentWeather(city) {
     xhr.onload = function() {
         if (xhr.status === 200) {
             const data = JSON.parse(xhr.responseText);
+            console.log("Current Weather Data:", data);
             const weatherInfo = `
-                <h3>Bieżąca pogoda w ${data.name}</h3>
+                <h3>Bieżąca pogoda w mieście ${data.name}</h3>
                 <p>Temperatura: ${data.main.temp}°C</p>
                 <p>Wilgotność: ${data.main.humidity}%</p>
                 <p>Opis: ${data.weather[0].description}</p>
@@ -37,7 +38,6 @@ function getCurrentWeather(city) {
 
 
 
-
 function getWeatherForecast(city) {
     const apiKey = '4068a40b8d6cea37dbd4b09523271be4';
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
@@ -45,7 +45,23 @@ function getWeatherForecast(city) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const forecastInfo = data.list.slice(0, 5).map(forecast => {
+            console.log("Forecast Data:", data);
+            const dailyForecasts = [];
+            let lastDate = '';
+
+            data.list.forEach(forecast => {
+                const date = new Date(forecast.dt * 1000);
+                const day = date.toLocaleDateString();
+                const hour = date.getHours();
+                if (day !== lastDate && hour > 10 && hour < 14) {
+                    dailyForecasts.push(forecast);
+                    lastDate = day;
+                }
+            });
+
+            const limitedForecasts = dailyForecasts;
+
+            const forecastInfo = limitedForecasts.map(forecast => {
                 const date = new Date(forecast.dt * 1000);
                 const day = date.toLocaleDateString();
                 return `
@@ -53,7 +69,6 @@ function getWeatherForecast(city) {
                         <h4>${day}</h4>
                         <p>Temperatura: ${forecast.main.temp}°C</p>
                         <p>Opis: ${forecast.weather[0].description}</p>
-                        <p></p>
                     </div>
                 `;
             }).join('');
@@ -63,6 +78,7 @@ function getWeatherForecast(city) {
             `;
         })
         .catch(error => {
+            console.error("Błąd:", error);
             document.getElementById('forecast-info').innerHTML = 'Błąd pobierania prognozy. Spróbuj ponownie.';
         });
 }
